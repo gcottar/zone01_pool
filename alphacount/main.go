@@ -9,4 +9,4 @@ func AlphaCount(s string) int {
 	}
 	return result
 }
-//alphacount: compter le nombre de caractère alphabétique dans la chaine de caractère
+//!alphacount: compter le nombre de caractère alphabétique dans la chaine de caractère
