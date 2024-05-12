@@ -1,0 +1,2 @@
+echo "Je suis pas très bien dans ma peau en ce moment Thierry me manque mais le code me rattache à lui"
+echo "Thierry si tu est auprès de moi, guide dans la branche qui serait la mieux pour moi, je t'aime même si je te l'ai jamais dis..."
