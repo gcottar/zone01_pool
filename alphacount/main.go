@@ -1,4 +1,4 @@
-package piscine
+package main
 
 func AlphaCount(s string) int {
 	result := 0
@@ -9,4 +9,3 @@ func AlphaCount(s string) int {
 	}
 	return result
 }
-//!alphacount: compter le nombre de caractère alphabétique dans la chaine de caractère
