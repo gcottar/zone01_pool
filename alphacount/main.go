@@ -1,4 +1,4 @@
-package main
+package piscine
 
 func AlphaCount(s string) int {
 	result := 0

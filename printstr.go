@@ -1,15 +1,11 @@
 package piscine
 
-import "github.com/01-edu/z01"
+import (
+	"github.com/01-edu/z01"
+)
 
-func main() {
-	PrintStr("Hello Wolrd")
-}
-
-func PrintStr(s string) {
-	hello := []rune(s)
-	for i := 0; i < len(s); i++ {
-		z01.PrintRune(hello[i])
+func PrintStr(str string) {
+	for i := 0; i < len(str); i++ {
+		z01.PrintRune(rune(str[i]))
 	}
-	z01.PrintRune('\n')
 }

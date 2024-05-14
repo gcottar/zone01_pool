@@ -1,27 +1,38 @@
 package piscine
 
-func BasicAtoi(s string) int {
-	isNeg := false
-	result := 0
-	index := 0
-	len := StrLen(s)
-
-	if index < len && (s[index] == '+' || s[index] == '-') {
-		if s[index] == '-' {
-			isNeg = true
+func Pow(a, b int) int {
+	p := 1
+	for b > 0 {
+		if b&1 != 0 {
+			p *= a
 		}
-		index++
+		b >>= 1
+		a *= a
 	}
-	for index < len && s[index] == '0' {
-		index++
+	return p
+}
+
+func BasicAtoi(s string) int {
+	Bstr := []rune(s)
+	Cstr := []rune(s)
+
+	LenRune := 0
+	for i := range Bstr {
+		i++
+		LenRune++
 	}
-	for index < len && s[index] >= '0' && s[index] <= '9' {
-		result *= 10
-		result += int(s[index] - '0')
-		index++
+	count := 0
+	fin := 0
+	c := 0
+	for i := 0; i < LenRune; i++ {
+		Cstr[i] = Bstr[LenRune-1-i]
+		c = 0
+		for v := Cstr[i]; v >= '0'; v-- {
+			c++
+			count = Pow(10, i) * (c - 1)
+
+		}
+		fin += count
 	}
-	if isNeg {
-		result *= -1
-	}
-	return result
+	return fin
 }
