@@ -32,5 +32,5 @@ func QuadA(x, y int) {
 }
 
 func main() {
-	QuadA(5, 3)
+	QuadA(25, 20)
 }
